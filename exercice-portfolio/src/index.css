@@ -1,5 +1,16 @@
+@font-face {
+  font-family: 'Gallient';
+  src: url('./assets/fonts/Gallient.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   text-decoration: none; 
+}
+
+h1 {
+  font-family: 'Gallient', sans-serif;
 }
