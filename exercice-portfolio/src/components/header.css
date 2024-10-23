@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  position: relative;
+}
+
+nav ul li a, .site-title {
+  font-family: sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 3px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+nav ul li a::before {
+  content: url('../assets/arrowRightMenu.svg'); 
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover::before {
+  opacity: 1;
+  left: -25px;
+}
