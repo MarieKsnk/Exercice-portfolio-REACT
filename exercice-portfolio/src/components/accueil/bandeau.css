@@ -1,0 +1,41 @@
+.bandeau {
+    background-color: rgb(54, 54, 54);
+    padding: 25px 0 20px 0;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.mots-bandeau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    animation: defilement 25s linear infinite;
+}
+
+.mots-bandeau span {
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+    font-family: 'DM sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-wrap: nowrap;
+    transition: font-weight 0.1s ease;
+}
+
+.mots-bandeau span:hover {
+    font-weight: 800;
+}
+
+
+/* Animations */
+@keyframes defilement {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%)
+    }
+}

@@ -21,4 +21,6 @@ h1 {
 p {
   font-family: 'DM sans', sans-serif;
   color: rgb(54, 54, 54);
+  margin: 0;
+  padding: 0;
 }

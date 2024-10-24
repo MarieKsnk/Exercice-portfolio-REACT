@@ -8,7 +8,9 @@ const Accueil = () => {
     <div>
       <Titre />
       <Bandeau />
-      </div></>
+      <Bandeau />
+      </div>
+    </>
   );
 };
 
