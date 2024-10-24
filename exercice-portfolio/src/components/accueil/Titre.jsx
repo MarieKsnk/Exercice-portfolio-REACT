@@ -17,6 +17,10 @@ const Titre = () => {
     <h1>& APPRENTIE DEV</h1>
     </div>
     </div>
+    <div className="texte-container">
+        <p><b>Passionnée</b> par la fusion harmonieuse de la <b>créativité</b> et de la <b>rigueur</b> technique du code, j'attache une grande importance à l'alliance de ces deux aspects pour concevoir des <b>solutions</b> numériques aussi <b>esthétiques</b> que <b>fonctionnelles.</b>
+        </p>
+    </div>
     </>
   );
 };

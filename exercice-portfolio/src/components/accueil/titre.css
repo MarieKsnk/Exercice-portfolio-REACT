@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 60px;
+    margin: 0px 50px 150px 50px;
 }
 
 .ligne-1 {
@@ -14,6 +15,9 @@
     width: 400px;
     object-fit: contain;
     margin-right: 20px;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInLeft 1.5s ease forwards;
 }
 
 .ligne-1 h1 {
@@ -22,6 +26,9 @@
     margin: 0; 
     padding: 0;
     line-height: 0.6;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.5s ease forwards;
 }
 
 .ligne-2 h1 {
@@ -30,6 +37,10 @@
     margin: 0; 
     padding: 0;
     line-height: 0.6;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.5s ease forwards;
+    animation-delay: 0.5s;
 }
 
 .ligne-3 h1 {
@@ -39,4 +50,48 @@
     margin: 0; 
     padding: 0;
     line-height: 0.4;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.texte-container {
+    display: flex;
+    text-align: left;
+    border-left: solid 2px rgb(54, 54, 54);
+    font-size: 44px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    word-spacing: 5px;
+    line-height: 60px;
+    margin: 0px 200px 100px 200px;
+    padding-left: 20px;
+}
+
+
+
+
+/* Animations */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

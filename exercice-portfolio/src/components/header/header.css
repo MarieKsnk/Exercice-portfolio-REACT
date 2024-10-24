@@ -18,10 +18,10 @@ nav li {
 }
 
 nav ul li a, .site-title {
-  font-family: sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: black;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   padding: 3px;
   text-decoration: none;
   position: relative;
