@@ -1,0 +1,42 @@
+.titre-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.ligne-1 {
+    display: flex;
+    align-items: flex-end; 
+}
+
+.ligne-1 img {
+    width: 400px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.ligne-1 h1 {
+    font-size: 150px;
+    font-weight: 400;
+    margin: 0; 
+    padding: 0;
+    line-height: 0.6;
+}
+
+.ligne-2 h1 {
+    font-size: 100px;
+    font-weight: 400;
+    margin: 0; 
+    padding: 0;
+    line-height: 0.6;
+}
+
+.ligne-3 h1 {
+    color: #6B1C12;
+    font-size: 60px;
+    font-weight: 400;
+    margin: 0; 
+    padding: 0;
+    line-height: 0.4;
+}

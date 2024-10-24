@@ -39,6 +39,7 @@ nav ul li a::before {
 }
 
 nav ul li a:hover::before {
+  color: #6B1C12;
   opacity: 1;
   left: -25px;
 }
