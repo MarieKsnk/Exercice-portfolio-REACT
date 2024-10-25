@@ -17,12 +17,12 @@ const CustomCursor = () => {
 
     const handleMouseOver = (e) => {
       if (e.target.tagName === "H1" || e.target.tagName === "H2" || e.target.tagName === "H3" || e.target.tagName === "P" || e.target.tagName === "A" || e.target.tagName === "SPAN") {
-        setMouseHover(true); // Agrandir le curseur
+        setMouseHover(true); 
       }
     };
 
     const handleMouseOut = () => {
-      setMouseHover(false); // Réduire le curseur
+      setMouseHover(false); 
     };
 
     document.addEventListener("mousemove", handleMouseMove);
