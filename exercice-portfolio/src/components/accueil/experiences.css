@@ -1,26 +1,158 @@
-.experiences-container {
+/* Style du titre */
+.titre-experiences {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.titre-1 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+    transform: translateX(-400px);
+}
+
+.titre-2 {
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 1;
+    transform: translateX(-80px);
+}
+
+.titre-3 {
+    font-size: 60px;
+    font-weight: 400;
+    color: #6B1C12;
+    line-height: 1;
+    transform: translateX(100px);
+}
+
+
+
+
+
+.experiences-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     position: relative;
+    padding: 0 100px;
+}
+
+.experiences-item {
+    display: flex;
+    align-items: center;
+  }
+
+.experiences-date {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+}
+
+.experiences-date h1 {
+    font-size: 150px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: opacity 0.3s ease;
+    opacity: 0.4;
+}
+
+.experiences-date h1:hover {
+    opacity: 1;
+    border-bottom: 2px solid black;
 }
 
 .experiences-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     position: relative;
     width: 50%;
     background-color:white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px 20px;
     margin-bottom: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(50px);
 }
 
+.experiences-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
 
+.experiences-item:nth-child(even) {
+    flex-direction: row;
+}
 
+/* Animation initiale des cartes */
+.experiences-card {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 0.6s forwards ease-in-out;
+  }
+  
 
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/* image */
 .experiences-logo img {
     width: 80px;
     height: 80px;
-    margin-bottom: 20px;
+}
+
+/* design interieur carte */
+.competences {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.entreprise {
+    font-family: 'Gallient', sans-serif;
+    color: #6B1C12;
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.poste {
+    font-family: 'DM sans', sans-serif;
+    color: rgb(54, 54, 54);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.duree .lieu {
+    color: rgb(54, 54, 54);
+}
+
+.competences li {
+    font-family: 'DM sans', sans-serif;
+    color: rgb(54, 54, 54);
+    text-wrap: nowrap;
+    padding: 5px 20px;
+    border: 1px solid rgb(54, 54, 54, 0.5);;
+    border-radius: 20px;
+}
+
+.experiences-details {
+    margin: 20px 0;
 }

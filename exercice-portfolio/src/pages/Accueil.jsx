@@ -9,7 +9,7 @@ const Accueil = () => {
     <div>
       <Titre />
       <Bandeau />
-      <div style={{ height: "150px" }} />
+      <div style={{ height: "200px" }} />
       <Experiences />
       </div>
     </>
