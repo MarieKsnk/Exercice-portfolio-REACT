@@ -1,0 +1,22 @@
+.cursor-1 {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* S'assurer que le curseur est toujours au-dessus */
+    transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
+    mix-blend-mode: difference;
+  }
+  
+  /* Effet lors du survol des éléments */
+  .cursor-1.hover {
+    transform: scale(1.5); /* Agrandit le curseur lors du survol */
+    width: 50px; /* Taille augmentée */
+    height: 50px;
+  }
+  

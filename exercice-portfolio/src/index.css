@@ -9,6 +9,11 @@
   margin: 0px;
   padding: 0px;
   text-decoration: none; 
+  cursor: none;
+}
+
+body {
+  background-color: white;
 }
 
 h1 {

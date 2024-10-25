@@ -18,6 +18,11 @@
     opacity: 0;
     transform: translateY(-50px);
     animation: fadeInLeft 1.5s ease forwards;
+    transition: filter 0.2s ease;
+}
+
+.ligne-1 img:hover {
+    filter: grayscale(100%)
 }
 
 .ligne-1 h1 {
@@ -60,12 +65,12 @@
     display: flex;
     text-align: left;
     border-left: solid 2px rgb(54, 54, 54);
-    font-size: 44px;
+    font-size: 38px;
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     word-spacing: 5px;
-    line-height: 60px;
+    line-height: 50px;
     margin: 0px 200px 100px 200px;
     padding-left: 20px;
 }

@@ -12,7 +12,7 @@ const Projets = () => {
         <div key={projet.id} className='projet-card'>
           <img src={projet.image} alt={projet.title} />
           <h2>{projet.title}</h2>
-          <p>{projet.description}</p>
+          <p>{projet.description}</p> 
         </div>
       ))}
     </div>

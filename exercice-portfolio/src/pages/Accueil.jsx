@@ -8,7 +8,6 @@ const Accueil = () => {
     <div>
       <Titre />
       <Bandeau />
-      <Bandeau />
       </div>
     </>
   );
