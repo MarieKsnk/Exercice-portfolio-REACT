@@ -29,6 +29,7 @@ const Bandeau = () => {
         <span>Force de proposition</span>
         <span>•</span>
         <span>Curieuse</span>
+        <span>•</span>
       </div>
     </div>
     </>

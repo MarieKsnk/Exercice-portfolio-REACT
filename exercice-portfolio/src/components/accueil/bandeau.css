@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    animation: defilement 25s linear infinite;
+    animation: defilement 20s linear infinite;
 }
 
 .mots-bandeau span {
